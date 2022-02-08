@@ -4,10 +4,8 @@
 
 <?php get_header(); ?>
 
-This is the Portfolio Listing template
-
 <?php while (have_posts()) : the_post(); ?>
-<div class="listing_full" style="">
+<div class="listing_full">
   <h1 class="listing_title"><?php the_title(); ?>
   </h1>
 

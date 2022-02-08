@@ -39,6 +39,7 @@ li {
   font-size: 1.25rem;
 }
 
+
 /* BUTTONS */
 
 .wp-block-button {
@@ -81,7 +82,6 @@ table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #04AA6D;
   color: white;
 }
 
@@ -145,6 +145,30 @@ img {
    width: 40%;
 }
 
+.itemEmail:visited {
+  color: white;
+}
+
+.itemHome:visited {
+  color: white;
+}
+
+.itemAbout:visited {
+  color: white;
+}
+
+.itemResume:visited {
+  color: white;
+}
+
+.itemName:visited {
+  color: white;
+}
+
+.itemCopyright:visited {
+  color: white;
+}
+
   .itemHome {
    display: flex;
    justify-content: center;
@@ -153,6 +177,8 @@ img {
    color: white;
    width: 20%;
  }
+
+
 
   .itemAbout {
    display: flex;
@@ -395,11 +421,52 @@ img {
   /* LISTING PAGE */
 
   .listing_full {
-    background-image: url("../img/single_bg.webp");
+    background-image: url("../img/listing_bg.webp");
     background-repeat: round;
     width: 100%;
     display: flex;
     flex-direction: column;
+  }
+
+  .listing_title {
+    font-size: 3rem;
+    font-family: 'NCS Radhiumz';
+    color: #28AFB0;
+    width: 50%;
+    margin: 6rem 2rem 1rem 3rem;
+  }
+
+  .listing_body {
+    background-color: #EB5E55;
+    margin: 1rem 1rem 1rem 2rem;
+    width: 15rem;
+    padding: 1rem;
+  }
+
+  
+  /* SEARCH PAGE */
+
+  .search_full {
+    background-image: url("../img/listing_bg.webp");
+    background-repeat: round;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search_title {
+    font-size: 3rem;
+    font-family: 'NCS Radhiumz';
+    color: #28AFB0;
+    width: 50%;
+    margin: 6rem 2rem 1rem 3rem;
+  }
+
+  .search_body {
+    background-color: #EB5E55;
+    margin: 1rem 1rem 1rem 2rem;
+    width: 15rem;
+    padding: 1rem;
   }
 
 
@@ -503,6 +570,30 @@ img {
     justify-content: center;
     font-size: 1.2rem;
     font-weight: bold;
+    color: white;
+  }
+
+  .itemEmail:visited {
+    color: white;
+  }
+  
+  .itemHome:visited {
+    color: white;
+  }
+  
+  .itemAbout:visited {
+    color: white;
+  }
+  
+  .itemResume:visited {
+    color: white;
+  }
+  
+  .itemName:visited {
+    color: white;
+  }
+  
+  .itemCopyright:visited {
     color: white;
   }
 
