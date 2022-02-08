@@ -1,3 +1,98 @@
+p {
+  font-family: 'Chai';
+  font-size: 1.2rem;
+}
+
+figcaption {
+  font-family: 'Chai';
+  font-size: 1rem;
+  color: #878787;
+}
+
+h1 {
+  font-family: 'Chai';
+  font-size: 32px;
+}
+
+h2 {
+  font-family: 'Chai';
+}
+
+h3 {
+  font-family: 'Chai';
+}
+
+h4 {
+  font-family: 'Chai';
+}
+
+h5 {
+  font-family: 'Chai';
+}
+
+h6 {
+  font-family: 'Chai';
+}
+
+li {
+  font-family: 'NCS Radhiumz';
+  font-size: 1.25rem;
+}
+
+/* BUTTONS */
+
+.wp-block-button {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: 'NCS Radhiumz';
+  width: 20rem;
+}
+
+.wp-block-button__link {
+  background-color: #28AFB0;
+  transition: background-color .5s;
+}
+
+.wp-block-button__link:hover {
+  background: #229696;
+}
+
+/* TABLES */
+
+table {
+  font-family: 'NCS Radhiumz';
+  background-color: #3A3335;
+  width: 100%;
+  border-radius: 25px;
+}
+
+tbody {
+  font-family: 'Chai';
+  color: white;
+}
+
+table td, table th {
+  border: 4px solid #FDF0D5;
+  padding: 8px;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* IMAGES */
+
+img {
+  width: auto;
+  height: auto;
+}
+
+
 @media only screen and (min-width: 800px) { /* THIS ONE IS ONLY USED WHEN IT'S MORE THAN 900px */
 
   body {
@@ -21,6 +116,21 @@
        font-family: 'NCS Radhiumz';
        width: 100%;
   }
+
+  .menu-midterm-menu-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #3A3335;
+}
+
+#menu-midterm-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'NCS Radhiumz';
+    width: 100%;
+}
 
   a {
     text-decoration: none;
@@ -87,6 +197,18 @@
   }
 
   /* HOME PAGE */
+  
+  .mobile_title {
+    display: none;
+  }
+
+  .mobile_subtitle {
+    display: none;
+  }
+
+  .mobile_subtitle2 {
+    display: none;
+  }
 
   .home_top {
     background-image: url("../img/desktop_bg.webp");
@@ -229,7 +351,56 @@
     line-height: 1.5rem;
   }
 
+  /* SINGLE PAGE */
 
+  .single_full {
+    background-image: url("../img/single_bg.webp");
+    background-repeat: round;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .single_title {
+    font-size: 3rem;
+    font-family: 'NCS Radhiumz';
+    color: #EB5E55;
+    width: 50%;
+    margin: 2rem 2rem 1rem 3rem;
+  }
+
+  .single_body {
+    margin: 0 2rem 2rem 3rem;
+    width: 70%;
+  }
+
+  
+  .wp-block-quote {
+    background-color: #EB5E55;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30rem;
+    height: 8rem;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 25px;
+  }
+
+  cite {
+    font-family: 'NCS Radhiumz';
+    text-align: right;
+  }
+
+  /* LISTING PAGE */
+
+  .listing_full {
+    background-image: url("../img/single_bg.webp");
+    background-repeat: round;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
 
   /* 404 PAGE */
@@ -260,12 +431,6 @@
     margin: 0;
     background-color: #FDF0D5;
   }
-
-    h1 {
-      color: blue;
-      font-family: 'Chai';
-    }
-
     /* PRIMARY MENU */
 
     .menu-primary-menu-container {
@@ -275,6 +440,22 @@
     }
 
     #menu-primary-menu {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'NCS Radhiumz';
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .menu-midterm-menu-container {
+      display: flex;
+      flex-direction: column;
+      background-color: #3A3335;
+  }
+
+    #menu-midterm-menu {
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -354,6 +535,113 @@
     .home_top {
       display: none;
     }
+
+    .mobile_title {
+      font-family: 'Sentrix';
+      letter-spacing: 0.5rem;
+      text-align: center;
+      margin: 3rem 1rem 0.5rem 1rem;
+    }
+
+    .mobile_subtitle {
+      font-family: 'NCS Radhiumz';
+      text-align: center;
+      margin: 0.5rem;
+    }
+  
+    .mobile_subtitle2 {
+      font-family: 'NCS Radhiumz';
+      text-align: center;
+      margin: 0.5rem;
+    }
+
+    .home_mid {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .allprojects {
+      display: none;
+    }
+  
+    .example_project {
+      background-image: url("../img/placeholder.jpg");
+      width: 75%;
+      height: 364px;
+      display: flex;
+      margin: 1.5rem;
+    }
+  
+    .example_project_textbox {
+      background-color: #3A3335;
+      width: 70%;
+    }
+  
+    .project_header {
+      color: white;
+      font-family: 'NCS Radhiumz';
+      font-size: 1.8rem;
+      padding: 0 1rem;
+    }
+  
+    .project_subheader {
+      color: #C6D8D3;
+      font-family: 'NCS Radhiumz';
+      font-size: 1rem;
+      padding: 0 1rem;
+    }
+  
+    .project_desc {
+      color: white;
+      font-family: 'Chai';
+      font-size: 1rem;
+      padding: 0 1rem;
+      line-height: 1.5rem;
+    }
+    
+  /* SINGLE PAGE */
+
+  .single_full {
+    background-image: url("../img/single_bg.webp");
+    background-repeat: round;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .single_title {
+    font-size: 3rem;
+    font-family: 'NCS Radhiumz';
+    color: #EB5E55;
+    width: 50%;
+    margin: 2rem 2rem 1rem 3rem;
+  }
+
+  .single_body {
+    margin: 0 2rem 2rem 3rem;
+    width: 70%;
+  }
+
+  
+  .wp-block-quote {
+    background-color: #EB5E55;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10rem;
+    height: 8rem;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 25px;
+  }
+
+  cite {
+    font-family: 'NCS Radhiumz';
+    text-align: right;
+  }
+
 
     /* 404 PAGE */
 

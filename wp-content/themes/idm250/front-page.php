@@ -17,10 +17,15 @@
      </div>
 </div>
 
+
+
 <div class="divider"></div>
 
 <div class="home_mid">
      <h2 class="allprojects">all projects</h2>
+     <h1 class="mobile_title">LIAM MAILLEY</h1>
+     <h2 class="mobile_subtitle">design / ux / ui</h2>
+     <p class="mobile_subtitle2">portfolio</p>
      <div class="example_project">
           <div class="example_project_textbox">
                <h1 class="project_header">Portfolio Item 1</h1>

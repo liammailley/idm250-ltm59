@@ -6,13 +6,12 @@
 
 This is the Portfolio Listing template
 
-
 <?php while (have_posts()) : the_post(); ?>
-<div class="" style="max-width: 300px; margin: 0 auto;">
-  <h1 class=""><?php the_title(); ?>
+<div class="listing_full" style="">
+  <h1 class="listing_title"><?php the_title(); ?>
   </h1>
 
-  <div class="">
+  <div class="listing_body">
     <!-- start content -->
     <?php the_content(); ?>
     <!-- end content -->
