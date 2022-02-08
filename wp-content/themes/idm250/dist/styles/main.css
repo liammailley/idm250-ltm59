@@ -1,8 +1,8 @@
 @media only screen and (min-width: 800px) { /* THIS ONE IS ONLY USED WHEN IT'S MORE THAN 900px */
 
-  h1 {
-    color: blue;
-    font-family: 'Chai';
+  body {
+    margin: 0;
+    background-color: #FDF0D5;
   }
 
   /* PRIMARY MENU */
@@ -27,7 +27,7 @@
    color: white;
  }
 
- #menu-item-30 {
+  .itemEmail {
    display: flex;
    font-size: 1rem;
    font-weight: normal;
@@ -35,7 +35,7 @@
    width: 40%;
 }
 
- #menu-item-31 {
+  .itemHome {
    display: flex;
    justify-content: center;
    font-size: 1.2rem;
@@ -44,7 +44,7 @@
    width: 20%;
  }
 
-  #menu-item-40 {
+  .itemAbout {
    display: flex;
    justify-content: center;
    font-size: 1.2rem;
@@ -53,7 +53,7 @@
    width: 20%;
  }
 
- #menu-item-39 {
+  .itemResume {
    display: flex;
    justify-content: center;
    font-size: 1.2rem;
@@ -80,15 +80,186 @@
  font-size: 1.2rem;
 }
 
-#menu-item-28 {
- font-family: 'Sentrix';
- letter-spacing: .2rem;
- color: white;
-}
+  .itemName {
+  font-family: 'Sentrix';
+  letter-spacing: .2rem;
+  color: white;
+  }
+
+  /* HOME PAGE */
+
+  .home_top {
+    background-image: url("../img/desktop_bg.webp");
+    background-repeat: round;
+    height: 45rem;
+    width: 100%;
+  }
+
+  .home_leftbox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    padding: 2rem;
+  }
+
+  .home_leftbox_top {
+    background-color: #EB5E55;
+  }
+
+  .home_leftbox_title {
+    font-family: 'Sentrix';
+    letter-spacing: 0.5rem;
+    text-align: center;
+    margin: 1rem;
+  }
+
+  .home_leftbox_subtitle {
+    font-family: 'NCS Radhiumz';
+    text-align: center;
+    margin: 1rem;
+  }
+
+  .home_leftbox_subtitle2 {
+    font-family: 'NCS Radhiumz';
+    text-align: center;
+    margin: 1rem;
+  }
+
+  .home_leftbox_mid {
+    width: 65%;
+    height: 1.8rem;
+    background-color: #3A3335;
+    align-self: flex-end;
+  }
+
+  .home_leftbox_bot {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 7.8rem;
+    background-color: #EB5E55;
+    align-self: flex-end;
+  }
+
+  .home_resumeBox {
+    max-width: 25%;
+    height: 7.8rem;
+    justify-content: center;
+    font-family: 'NCS Radhiumz';
+    text-align: center;
+  }
+
+  .home_instaBox {
+    max-width: 25%;
+    height: 7.8rem;
+    justify-content: center;
+    font-family: 'NCS Radhiumz';
+    text-align: center;
+  }
+
+  .home_githubBox {
+    max-width: 25%;
+    height: 7.8rem;
+    justify-content: center;
+  }
+
+  .home_linkedinBox {
+    max-width: 25%;
+    height: 7.8rem;
+    justify-content: center;
+  }
+
+  .divider {
+    width: 100%;
+    height: 2rem;
+    background-color: #3A3335;
+  }
+
+  .home_mid {
+    background-image: url("../img/desktop_bg_2.webp");
+    background-repeat: round;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .allprojects {
+    margin: 0;
+    padding: 2rem;
+    font-family: 'NCS Radhiumz';
+    font-size: 1.5rem;
+    color: #878787;
+    align-self: flex-start;
+  }
+
+  .example_project {
+    background-image: url("../img/placeholder.jpg");
+    width: 70%;
+    height: 364px;
+    display: flex;
+    margin: 1.5rem;
+  }
+
+  .example_project_textbox {
+    background-color: #3A3335;
+    width: 30%;
+  }
+
+  .project_header {
+    color: white;
+    font-family: 'NCS Radhiumz';
+    font-size: 2.2rem;
+    padding: 0 1rem;
+  }
+
+  .project_subheader {
+    color: #C6D8D3;
+    font-family: 'NCS Radhiumz';
+    font-size: 1.25rem;
+    padding: 0 1rem;
+  }
+
+  .project_desc {
+    color: white;
+    font-family: 'Chai';
+    font-size: 1rem;
+    padding: 0 1rem;
+    line-height: 1.5rem;
+  }
+
+
+
+
+  /* 404 PAGE */
+
+  .bg_404 {
+    background-image: url("../img/404_bg.webp");
+    background-repeat: round;
+    height: 45rem;
+    width: 100%;
+  }
+
 
 }
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 800px) {
+
+  body {
+    margin: 0;
+    background-color: #FDF0D5;
+  }
 
     h1 {
       color: blue;
@@ -118,7 +289,7 @@
     color: white;
   }
 
-  #menu-item-30 {
+  .itemEmail {
     display: flex;
     align-items: center;
     font-size: 1rem;
@@ -127,7 +298,7 @@
     padding-left: 40px;
   }
 
-  #menu-item-31 {
+  .itemHome {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,7 +307,7 @@
     color: white;
   }
 
-    #menu-item-40 {
+    .itemAbout {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,7 +316,7 @@
     color: white;
   }
 
-  #menu-item-39 {
+  .itemResume {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,11 +343,26 @@
   font-size: 1.2rem;
   }
 
-  #menu-item-28 {
+  .itemName {
   font-family: 'Sentrix';
   letter-spacing: .2rem;
   color: white;
   }
+
+    /* HOME PAGE */
+
+    .home_top {
+      display: none;
+    }
+
+    /* 404 PAGE */
+
+    .bg_404 {
+      background-image: url("../img/404_mobile_bg.webp");
+      background-repeat: round;
+      height: 45rem;
+      width: 100%;
+    }
 
 }
 
