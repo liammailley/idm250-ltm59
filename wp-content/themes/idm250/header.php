@@ -17,7 +17,8 @@
 
 </head>
 
-<body>
+<body <?php body_class(); ?>>
+  <!-- body_class is there for adding classes to body-->
   <?php
   // Registered this menu in functions.php
   wp_nav_menu(['theme_location' => 'primary_menu']);
