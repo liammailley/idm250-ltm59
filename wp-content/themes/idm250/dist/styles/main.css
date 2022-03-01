@@ -39,6 +39,18 @@ li {
   font-size: 1.25rem;
 }
 
+.dynamic {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25rem;
+  padding-bottom: 1rem;
+}
+
+.dynamic_indv {
+  font-weight: normal;
+  margin: 0.4rem 0;
+}
+
 
 /* BUTTONS */
 
