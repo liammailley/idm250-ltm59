@@ -17,10 +17,20 @@
      </div>
 </div>
 
-
-
 <div class="divider"></div>
 
+<h1 class="mobile_title">LIAM MAILLEY</h1>
+<h2 class="mobile_subtitle">design / ux / ui</h2>
+<p class="mobile_subtitle2">portfolio</p>
+
+<div class="home_posts_container">
+     <?php
+          get_template_part('components/recent-works');
+          get_template_part('components/recent-posts');
+     ?>
+</div>
+
+<!--
 <div class="home_mid">
      <h2 class="allprojects">all projects</h2>
      <h1 class="mobile_title">LIAM MAILLEY</h1>
@@ -48,5 +58,6 @@
           </div>
      </div>
 </div>
+-->
 
 <?php get_footer(); ?>

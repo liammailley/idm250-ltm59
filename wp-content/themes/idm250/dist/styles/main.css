@@ -114,26 +114,76 @@ img {
 
   /* PRIMARY MENU */
 
+  .header-main {
+    display: flex;
+    background-color: #3A3335;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .favicon_container {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .search-form-container {
+    display: flex;
+    width: 20%;
+    margin-right: 4rem;
+  }
+
+  .search-form {
+    display: flex;
+  }
+
+  button {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: 'NCS Radhiumz';
+    font-size: 0.7rem;
+    color: white;
+    width: 5rem;
+    background-color: #28AFB0;
+    transition: background-color .5s;
+    border: none;
+    margin: 0 0.4rem;
+  }
+  
+  button:hover {
+    background: #229696;
+  }
+
+  input {
+    border-radius: 8px;
+  }
+
   .menu-primary-menu-container {
        display: flex;
        flex-direction: row;
-       background-color: #3A3335;
   }
 
   #menu-primary-menu {
-       list-style: none;
-       display: flex;
-       flex-direction: row;
-       justify-content: space-between;
-       font-family: 'NCS Radhiumz';
-       width: 100%;
-  }
-
-  .menu-midterm-menu-container {
+    list-style: none;
     display: flex;
     flex-direction: row;
-    background-color: #3A3335;
+    justify-content: space-around;
+    font-family: 'NCS Radhiumz';
+    width: 100%;
+  }
+
+  .menu-primary-menu-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;  
 }
+
+  .menu-choices-container {
+    display: flex;
+    flex-direction: flex-start;
+    width: 70%;
+  }
 
 #menu-midterm-menu {
     list-style: none;
@@ -345,6 +395,12 @@ img {
     align-items: center;
   }
 
+  .home_posts_container {
+    background-image: url("../img/desktop_bg_2.webp");
+    background-repeat: round;
+    width: 100%;
+  }
+
   .allprojects {
     margin: 0;
     padding: 2rem;
@@ -481,6 +537,53 @@ img {
     padding: 1rem;
   }
 
+  /* ABOUT PAGE */
+
+  .about_full {
+    background-image: url("../img/listing_bg.webp");
+    background-repeat: round;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about_title {
+    font-size: 3rem;
+    font-family: 'NCS Radhiumz';
+    color: #28AFB0;
+    margin: 6rem 2rem 1rem 3rem;
+  }
+
+  .about_body {
+    margin: 1rem 1rem 1rem 2rem;
+    padding: 1rem;
+  }
+
+  /* RESUME PAGE */
+
+  .resume_full {
+    background-repeat: round;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .resume_title {
+    font-size: 3rem;
+    font-family: 'NCS Radhiumz';
+    color: #28AFB0;
+    margin: 3rem 2rem 0 3rem;
+  }
+
+  .resume_body {
+    margin: 1rem 1rem 1rem 2rem;
+    padding: 1rem;
+  }
+
+  div.resume_body li {
+    font-family: 'Chai';
+  }
+
 
   /* 404 PAGE */
 
@@ -491,8 +594,144 @@ img {
     width: 100%;
   }
 
+    /* PROJECT TEASERS */
 
+    .hero {
+      margin-left: 1.5rem;
+    }
+
+    .search-results-container {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 1rem;
+    }
+
+    .project-teaser {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: #EB5E55;
+      margin: 1rem;
+      width: 18rem;
+      padding: 1rem;
+    }
+
+    .project-teaser-title {
+      font-size: 3rem;
+      font-family: 'NCS Radhiumz';
+      color: #28AFB0;
+      margin: 1rem 1rem 1rem 0;
+    }
+
+    .project-teaser-excerpt {
+      color: #C6D8D3;
+    }
+
+    .project-teaser-img {
+      display: flex;
+    }
+
+    /* RECENT WORKS */
+
+    .works {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .recent-works-container {
+      display: flex;
+      background-repeat: initial;
+      width: 70%;
+      height: 400px;
+      margin: 1.5rem;
+    }
+
+    .recent-works-teaser {
+      background-color: #3A3335;
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+    .recent-works-title {
+      font-size: 3rem;
+      font-family: 'NCS Radhiumz';
+      color: #28AFB0;
+      margin: 1rem 1rem 1rem 0;
+    }
+
+    .recent-works-excerpt {
+      color: #C6D8D3;
+    }
+
+    .recent-works-img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .recent-works-img {
+      overflow: hidden;
+      height: 80%;
+    }
+
+    /* RECENT POSTS */
+
+    .posts {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 70%;
+    }
+
+    .recent-posts-teaser {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: #EB5E55;
+      margin: 1rem 2rem 1rem 2rem;
+      width: 18rem;
+      padding: 1rem;
+    }
+
+    .recent-posts-title {
+      font-size: 3rem;
+      font-family: 'NCS Radhiumz';
+      color: #28AFB0;
+      margin: 1rem 1rem 1rem 0;
+    }
+
+    .recent-posts-excerpt {
+      color: #C6D8D3;
+    }
+
+    .recent-posts-img {
+      display: flex;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -512,6 +751,55 @@ img {
   }
     /* PRIMARY MENU */
 
+    .header-main {
+      display: flex;
+      background-color: #3A3335;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .favicon_container {
+      width: 10%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .search-form-container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin: 1rem 0;
+    }
+  
+    .search-form {
+      display: flex;
+    }
+
+    input {
+      border-radius: 8px;
+    }
+  
+  
+    button {
+      -webkit-border-radius: 28;
+      -moz-border-radius: 28;
+      border-radius: 28px;
+      font-family: 'NCS Radhiumz';
+      font-size: 0.7rem;
+      color: white;
+      width: 5rem;
+      background-color: #28AFB0;
+      transition: background-color .5s;
+      border: none;
+      margin: 0 0.4rem;
+    }
+    
+    button:hover {
+      background: #229696;
+    }
+  
+
     .menu-primary-menu-container {
         display: flex;
         flex-direction: column;
@@ -521,11 +809,15 @@ img {
     #menu-primary-menu {
         list-style: none;
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
+        flex-direction: row;
         font-family: 'NCS Radhiumz';
         max-width: 100%;
         padding: 0;
+    }
+
+    .menu-item {
+      margin: 0 1rem;
     }
 
     .menu-midterm-menu-container {
@@ -666,7 +958,13 @@ img {
     }
   
     .allprojects {
-      display: none;
+      display:block;
+      margin: 0;
+      padding: 2rem 2rem 1rem 2rem;
+      font-family: 'NCS Radhiumz';
+      font-size: 1.5rem;
+      color: #878787;
+      text-align: center;
     }
   
     .example_project {
@@ -754,6 +1052,171 @@ img {
       height: 45rem;
       width: 100%;
     }
+
+        /* PROJECT TEASERS */
+
+        .hero {
+          margin-left: 1.5rem;
+        }
+    
+        .search-results-container {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+    
+        .project-teaser {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          background-color: #EB5E55;
+          margin: 1rem 2rem 1rem 2rem;
+          width: 18rem;
+          padding: 1rem;
+        }
+    
+        .project-teaser-title {
+          font-size: 3rem;
+          font-family: 'NCS Radhiumz';
+          color: #28AFB0;
+          margin: 1rem 1rem 1rem 0;
+        }
+    
+        .project-teaser-excerpt {
+          color: #C6D8D3;
+        }
+    
+        .project-teaser-img {
+          display: flex;
+        }
+    
+        /* RECENT WORKS */
+    
+        .works {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+    
+        .recent-works-container {
+          display: flex;
+          flex-direction: column;
+          background-repeat: initial;
+          width: 80%;
+          height: 800px;
+          margin: 1.5rem;
+        }
+    
+        .recent-works-teaser {
+          background-color: #3A3335;
+          display: flex;
+          flex-direction: column;
+          padding: 1rem;
+          height: 400px;
+        }
+    
+        .recent-works-title {
+          font-size: 3rem;
+          font-family: 'NCS Radhiumz';
+          color: #28AFB0;
+          margin: 1rem 1rem 1rem 0;
+        }
+    
+        .recent-works-excerpt {
+          color: #C6D8D3;
+        }
+    
+        .recent-works-img-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        .recent-works-img {
+          overflow: hidden;
+          height: 80%;
+        }
+
+        /* RECENT POSTS */
+
+        .posts {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+
+        .recent-posts-teaser {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          background-color: #EB5E55;
+          margin: 1rem 2rem 1rem 2rem;
+          width: 18rem;
+          padding: 1rem;
+        }
+
+        .recent-posts-title {
+          font-size: 3rem;
+          font-family: 'NCS Radhiumz';
+          color: #28AFB0;
+          margin: 1rem 1rem 1rem 0;
+        }
+
+        .recent-posts-excerpt {
+          color: #C6D8D3;
+        }
+
+        .recent-posts-img {
+          display: flex;
+        }
+
+          /* ABOUT PAGE */
+
+  .about_full {
+    background-image: url("../img/listing_bg.webp");
+    background-repeat: round;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about_title {
+    font-size: 3rem;
+    font-family: 'NCS Radhiumz';
+    color: #28AFB0;
+    margin: 6rem 2rem 1rem 3rem;
+  }
+
+  .about_body {
+    margin: 1rem 1rem 1rem 2rem;
+    padding: 1rem;
+  }
+
+  /* RESUME PAGE */
+
+  .resume_full {
+    background-repeat: round;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .resume_title {
+    font-size: 3rem;
+    font-family: 'NCS Radhiumz';
+    color: #28AFB0;
+    margin: 3rem 2rem 0 3rem;
+  }
+
+  .resume_body {
+    margin: 1rem 1rem 1rem 2rem;
+    padding: 1rem;
+  }
+
+  div.resume_body li {
+    font-family: 'Chai';
+  }
 
 }
 

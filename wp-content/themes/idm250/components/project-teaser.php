@@ -8,11 +8,12 @@
         $featured_image['src'] = '//via.placeholder.com/1058x705';
     };
 ?>
-<div class="project-teaser">
-  <img
-    src="<?php echo $featured_image['src']; ?>"
-    alt="<?php echo $featured_image['alt']; ?>">
-  <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-  <p><?php the_excerpt(); ?>
-  </p>
-</div>
+
+  <div class="project-teaser">
+    <img class="project-teaser-img"
+      src="<?php echo $featured_image['src']; ?>"
+      alt="<?php echo $featured_image['alt']; ?>">
+    <h2 class="project-teaser-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+    <div class="project-teaser-excerpt"><?php the_excerpt(); ?>
+    </div>
+  </div>

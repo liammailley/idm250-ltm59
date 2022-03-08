@@ -4,7 +4,7 @@
 $arg = [
     'post_type' => 'post',
     'post_status' => 'publish',
-    'posts_per_page' => 4,
+    'posts_per_page' => 3,
     'order' => 'DESC',
 
 ];
@@ -13,8 +13,8 @@ $project_query = new WP_Query($arg);
 ?>
 
 <section class="featured-works">
-  <h2>Recent Posts</h2>
-  <div class="works">
+  <h2 class="allprojects">recent posts</h2>
+  <div class="posts">
     <?php
     while ($project_query->have_posts()) : $project_query->the_post(); ?>
     <?php
@@ -26,14 +26,14 @@ $project_query = new WP_Query($arg);
         $featured_image['src'] = '//via.placeholder.com/600x450';
     };
     ?>
-    <div class="recent-work-teaser">
-      <img class="recent-work-teaser__image"
-        src="<?php echo $featured_image['src']; ?>"
-        alt="<?php echo $featured_image['alt']; ?>">
-      <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-      </h2>
-      <p><?php the_excerpt(); ?>
-      </p>
+    <div class="recent-posts-teaser">
+        <img class="recent-posts-img"
+          src="<?php echo $featured_image['src']; ?>"
+          alt="<?php echo $featured_image['alt']; ?>">
+        <h2 class="recent-posts-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+        </h2>
+        <div class="recent-posts-excerpt"><?php the_excerpt(); ?>
+        </div>
     </div>
     <?php
     endwhile;
