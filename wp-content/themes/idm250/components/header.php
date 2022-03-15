@@ -1,8 +1,10 @@
 <header class="container header-main">
-     <h1 class="favicon_container"><img style="height: 50px;"
-          src="<?php echo get_template_directory_uri() ?>/dist/img/liam_favicon.png"
-          alt="Website Logo">
-     </h1>
+     <a class="favicon_container"  href="<?php echo home_url(); ?>">
+          <h1><img style="height: 50px;" href="http://www.google.com"
+               src="<?php echo get_template_directory_uri() ?>/dist/img/liam_favicon.png"
+               alt="Website Logo">
+          </h1>
+     </a>
      <div class="menu-choices-container">
           <?php
           wp_nav_menu(['theme_location' => 'primary_menu']);
