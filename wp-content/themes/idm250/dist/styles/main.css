@@ -504,30 +504,26 @@ img {
     text-align: right;
   }
 
-  /* LISTING PAGE */
+      /* LISTING PAGE */
 
-  .listing_full {
-    background-image: url("../img/listing_bg.webp");
-    background-repeat: round;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
+      .listing_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
 
-  .listing_title {
-    font-size: 3rem;
-    font-family: 'NCS Radhiumz';
-    color: #28AFB0;
-    width: 50%;
-    margin: 6rem 2rem 1rem 3rem;
-  }
-
-  .listing_body {
-    background-color: #EB5E55;
-    margin: 1rem 1rem 1rem 2rem;
-    width: 15rem;
-    padding: 1rem;
-  }
+      .listing_title {
+        font-size: 3rem;
+        font-family: 'NCS Radhiumz';
+        color: #28AFB0;
+        margin: 2rem 2rem 1rem 3rem;
+      }
+  
+      .listing_results_container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 1rem;
+      }
 
   
   /* SEARCH PAGE */

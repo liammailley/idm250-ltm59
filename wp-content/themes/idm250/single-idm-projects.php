@@ -11,7 +11,7 @@
         $terms = get_the_terms(get_the_ID(), 'idm-project-categories');
         if ($terms) {
             foreach ($terms as $term) {
-                echo $term->name . ' ';
+                echo $term->name . '<br>';
             }
         }
     ?>

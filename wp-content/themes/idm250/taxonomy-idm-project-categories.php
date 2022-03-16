@@ -1,11 +1,11 @@
 <?php
 get_header(); ?>
 
-<h1 class="container"><?php the_archive_title(); ?>
+<h1 class="listing_title"><?php the_archive_title(); ?>
 </h1>
 <br>
-<div class="container">
-  <div class="grid-4">
+
+  <div class="listing_results_container">
     <?php
     while (have_posts()) : the_post();
       get_template_part('components/project-teaser');
@@ -17,6 +17,5 @@ get_header(); ?>
     ]);
   ?>
   </div>
-</div>
 
 <?php get_footer();
