@@ -19,8 +19,6 @@
     </div>
     <div class="editor single_body">
          <div class="dynamic">
-               <h3 class="dynamic_indv">Category: <b><?php echo get_field('project_category'); ?></b>
-               </h3>
                <h3 class="dynamic_indv">Year Completed: <b><?php the_field('project_year'); ?></b>
                </h3>
                <h3 class="dynamic_indv">Class / Client: <b><?php the_field('project_client'); ?></b>
