@@ -23,3 +23,7 @@ require get_template_directory() . '/includes/taxonomies.php';
  * Helper functions
  */
 require get_template_directory() . '/includes/helpers.php';
+/**
+* Excerpt Filter
+*/
+require get_template_directory() . '/includes/filter.php';

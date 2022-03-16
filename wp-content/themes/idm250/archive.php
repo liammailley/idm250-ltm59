@@ -7,7 +7,7 @@
 */
 get_header(); ?>
 
-<h1 class="container"><?php the_archive_title(); ?>
+<h1 class="archive_container"><?php the_archive_title(); ?>
 </h1>
 <div class="container sidebar">
   <div class="sidebar-main grid-2">

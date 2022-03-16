@@ -5,15 +5,17 @@
   <main class="single_full">
     <h1 class="single_title"><?php the_title(); ?></h1>
 
-    <div style="margin-left: 20px;">
+    <div class="single_categories">
+      <b>
       <?php
         $terms = get_the_terms(get_the_ID(), 'idm-project-categories');
         if ($terms) {
             foreach ($terms as $term) {
-                echo $term->name . ',';
+                echo $term->name . ' ';
             }
         }
     ?>
+      </b>
     </div>
     <div class="editor single_body">
          <div class="dynamic">
