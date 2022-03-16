@@ -9,6 +9,26 @@ figcaption {
   color: #878787;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 a {
+  text-decoration: underline;
+  color: blue;
+}
+
+p a {
+  text-decoration: underline;
+  color: blue;
+}
+
+h2 a {
+  text-decoration: underline;
+  color: blue;
+}
+
 h1 {
   font-family: 'Chai';
   font-size: 32px;
@@ -194,11 +214,6 @@ img {
     width: 100%;
 }
 
-  a {
-    text-decoration: none;
-   color: white;
- }
-
   .itemEmail {
    display: flex;
    font-size: 1rem;
@@ -239,8 +254,6 @@ img {
    color: white;
    width: 20%;
  }
-
-
 
   .itemAbout {
    display: flex;
@@ -818,6 +831,12 @@ img {
 
     .menu-item {
       margin: 0 1rem;
+      color: white;
+    }
+
+    .menu-item a {
+      text-decoration: none;
+      color: white;
     }
 
     .menu-midterm-menu-container {
@@ -835,11 +854,6 @@ img {
         max-width: 100%;
         padding: 0;
     }
-
-  a {
-    text-decoration: none;
-    color: white;
-  }
 
   .itemEmail {
     display: flex;
